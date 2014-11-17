@@ -1,0 +1,54 @@
+<div class="wineyard-section-register">
+
+<button class="home" ng-click="gotoHome()"></button>
+
+
+	<div class="wsection2">
+		<p>
+		Dejanos tus datos y accedé<br>a beneficios especiales<br>
+		a través de nuestro centro<br>de venta directa
+		</p>
+		
+	</div>
+	<form id="form">
+		<div class="form-group">
+			<label for="name">* Nombre:</label>
+			<input type="text" class="name" ng-model="form.name" name="name" placeholder="" />
+		</div>
+
+		<div class="form-group">
+			<label for="last_name">&nbsp;&nbsp;Apellido:</label>
+			<input type="text" class="last_name" ng-model="form.last_name" name="last_name" placeholder="" />
+		</div>
+
+		<div class="form-group">
+			<label for="email">* E-mail:</label>
+			<input type="text" class="email" ng-model="form.email" name="email" placeholder="" />
+		</div>
+
+		<div class="form-group">
+			<label for="bird_date">* Fecha Nac:</label>
+			<input type="text" class="birdate bird_date_day" ng-model="form.bird_date_day" name="bird_date_day" placeholder="Día" />
+			<input type="text" class="birdate bird_date_month" ng-model="form.bird_date_month" name="bird_date_month" placeholder="Mes" />
+			<input type="text" class="birdate bird_date_year" ng-model="form.bird_date_year" name="bird_date_year" placeholder="Año" />
+		</div>
+
+		<div class="form-group">
+			<label for="zone">* Zona:</label>
+			<input type="text" class="zone" ng-model="form.zone" name="zone" placeholder="" />
+			<button class="" ng-click="clickRegistrar()">Enviar</button>
+		</div>
+
+	</form>
+
+	<div class="loading" ng-show="loading">
+		<img src="img/loading.gif"/>
+	</div>
+	
+	<div
+		class="fb-like wineyard-fb-container"
+		data-share="true"
+		data-width="450"
+		data-show-faces="true">
+	</div>
+</div>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AdobeGaramondProRegular';
+    src: url('agaramondpro-regular.eot');
+    src: url('agaramondpro-regular.eot') format('embedded-opentype'),
+         url('agaramondpro-regular.woff2') format('woff2'),
+         url('agaramondpro-regular.woff') format('woff'),
+         url('agaramondpro-regular.ttf') format('truetype'),
+         url('agaramondpro-regular.svg#AdobeGaramondProRegular') format('svg');
+}
