@@ -28,14 +28,21 @@
 
 		<div class="form-group">
 			<label for="bird_date">* Fecha Nac:</label>
-			<input type="text" class="birdate bird_date_day" ng-model="form.bird_date_day" name="bird_date_day" placeholder="Día" />
-			<input type="text" class="birdate bird_date_month" ng-model="form.bird_date_month" name="bird_date_month" placeholder="Mes" />
-			<input type="text" class="birdate bird_date_year" ng-model="form.bird_date_year" name="bird_date_year" placeholder="Año" />
+			
+
+			<select name="bird_date_day" class="birdate bird_date_day" ng-model="form.bird_date_day" ng-options="m for m in days"></select>
+			
+
+			<select name="bird_date_month" class="birdate bird_date_month" ng-model="form.bird_date_month" ng-options="months.indexOf(m) as m for m in months"></select>
+
+			<select name="bird_date_year" class="birdate bird_date_year" ng-model="form.bird_date_year" ng-options="m for m in years"></select>
+
 		</div>
 
 		<div class="form-group">
 			<label for="zone">* Zona:</label>
-			<input type="text" class="zone" ng-model="form.zone" name="zone" placeholder="" />
+			<select name="zone" class="zone" ng-model="form.zone" ng-options="m for m in provinces"></select>
+
 			<button class="" ng-click="clickRegistrar()">Enviar</button>
 		</div>
 
@@ -45,10 +52,7 @@
 		<img src="img/loading.gif"/>
 	</div>
 	
-	<div
-		class="fb-like wineyard-fb-container"
-		data-share="true"
-		data-width="450"
-		data-show-faces="true">
-	</div>
+<button class="btn btn-facebook wineyard-fb-container" ng-click='share()'>
+	<i class="fa fa-facebook" ></i> | Compartir
+</button>
 </div>

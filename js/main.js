@@ -43,7 +43,8 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 			url: '^/',
 			views: {
 				'': {
-					templateUrl: 'views/home.html'
+					//templateUrl: 'views/home.html'
+					templateUrl: 'views/mayor.html'
 						//controller: 'HomeController'
 				}
 			}
@@ -125,16 +126,61 @@ app.controller("myAppBodyCtrl", function($scope, $state, $rootScope, $ws, focus,
 	$scope.loading = false;
 	$scope.form = {};
 
-/*
-	$scope.form = {
-		name: 'Pedro Alfonzo',
-		last_name: 'Bravo',
-		email: 'bravo@globaltales.com',
-		bird_date_day: 18,
-		bird_date_month: 03,
-		bird_date_year: 1957,
-		zone: 'Congreso',
-	}*/
+	$scope.months = [
+		'enero', 'febrero', 'marzo', 'abril'
+
+		, 'mayo', 'junio', 'julio', 'agosto', 'septiembre'
+
+		, 'octubre', 'noviembre', 'diciembre'
+	];
+
+	$scope.provinces = [
+		'Buenos Aires',
+		'Catamarca',
+		'Chaco',
+		'Chubut',
+		'Córdoba',
+		'Corrientes',
+		'Entre Ríos',
+		'Formosa',
+		'Jujuy',
+		'La Pampa',
+		'La Rioja',
+		'Mendoza',
+		'Misiones',
+		'Neuquén',
+		'Río Negro',
+		'Salta',
+		'San Juan',
+		'San Luis',
+		'Santa Cruz',
+		'Santa Fe',
+		'Santiago del Estero',
+		'Tierra del Fuego',
+		'Tucumán'
+	];
+
+	
+
+	$scope.days = [];
+	for(var x = 0; x < 31;x++){
+		$scope.days.push(x);
+	}
+	$scope.years = [];
+	for(var x = 1940; x < 2015;x++){
+		$scope.years.push(x);
+	}
+
+	/*
+		$scope.form = {
+			name: 'Pedro Alfonzo',
+			last_name: 'Bravo',
+			email: 'bravo@globaltales.com',
+			bird_date_day: 18,
+			bird_date_month: 03,
+			bird_date_year: 1957,
+			zone: 'Congreso',
+		}*/
 
 	$scope.gotoHome = function() {
 		$state.go("/", {});
@@ -289,6 +335,27 @@ app.controller("myAppBodyCtrl", function($scope, $state, $rootScope, $ws, focus,
 			type: "data:text/csv;charset=utf-8"
 		});
 		saveAs(blob, name);
+	}
+
+	$scope.share = function() {
+		FB.ui({
+				method: 'share',
+				name: 'Facebook Dialogs',
+				href: 'http://quadramma.com/apps/lamascotawineyard',
+				//picture: 'www.quadramma.com/apps/lamascotawineyard/img/bg_home.jpg',
+				// caption: 'La Mascota Wineyard',
+				//description: ''
+			},
+			function(response) {
+				/*
+            if (response && response.post_id) {
+                alert('Post was published.');
+            } else {
+                alert('Post was not published.');
+            }
+            */
+			}
+		);
 	}
 
 
