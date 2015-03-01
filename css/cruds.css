@@ -1,0 +1,144 @@
+
+
+html{
+	/*overflow: hidden;*/
+}
+
+
+header{
+	position: fixed;
+	margin: 0px;
+	width: 100%;
+	padding: 0px;
+	background: white;
+	top: 0px;
+	color: black;
+	z-index: 999;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+footer{
+
+    padding: 10px 10px 10px 0px;
+}
+footer h3{
+    text-align: center;
+
+    font-size: 16px;
+}
+header h2{
+    margin: 20px 0px 10px 00px;
+
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+#cruds-menu{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+#cruds-search{
+    text-align: center;
+
+}
+#cruds-search-wrapper{
+
+}
+
+
+select.form-field{
+	background: transparent;
+}
+
+
+.cruds-form{
+	margin: 5px;
+}
+
+
+.cruds-label{
+	display: block;
+	text-align: center;
+	margin: 40px 20px 40px 20px;
+	border-top: 3px solid black;
+}
+
+.form-field{
+	margin: 5px 5px 5px 0px;
+	border: 0px;
+	border-bottom:1px solid;
+	min-width: 150px;
+}
+
+.hidden-field{
+	display: none;
+
+}
+
+.internid-field,.operation-field,.output-field{
+	border: 0px;
+	border-left:1px solid;
+	padding-left: 5px;
+	display: block;
+}
+.output-field{
+    min-width: 320px;
+    /*
+    min-width: 1px!important;
+    width: 1px!important;
+    max-width: 1px!important;
+    */
+}
+
+.cruds-button{
+	background: transparent;
+	border: 0px;
+	border-top: 2px solid black;
+	margin: 5px;
+	border-bottom: 1px solid rgba(0,0,0,0);
+}
+.cruds-button[disabled]{
+    color: grey;
+	
+}
+
+.cruds-button:hover{
+	border-bottom: 1px solid black;
+}
+
+
+
+
+.cruds-table{
+    min-width: 320px;
+    margin: 5px;
+}
+.cruds-table tbody{}
+.cruds-table tbody tr:hover{
+	cursor: pointer;
+	border-bottom:1px solid;
+	background: rgba(0,0,0,.1);
+}
+.cruds-table thead{}
+.cruds-table thead th{
+    text-align: left;
+}
+.cruds-table tbody tr{
+		border-bottom:1px solid rgba(0,0,0,0);
+}
+.cruds-table tbody tr td{}
+.cruds-table tfoot {}
+
+
+
+.cruds-hr{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 0px;
+	padding: 0;
+}

@@ -1,0 +1,54 @@
+{
+	"HIDEALL": {
+		"EN": "Hide all",
+		"ES": "Ocultar todos"
+	},
+	"SHOWALL": {
+		"EN": "Show all",
+		"ES": "Mostrar todos"
+	},
+	"EDITION": {
+		"EN": "Edition",
+		"ES": "Edicion"
+	},
+	"NEW": {
+		"EN": "New",
+		"ES": "Nuevo"
+	},
+	"CLEAR_FIELDS": {
+		"EN": "Clear fields",
+		"ES": "Despejar campos"
+	},
+	"DELETED": {
+		"EN": "Item Deleted",
+		"ES": "Registro Eliminado"
+	},
+	"DELETE": {
+		"EN": "Delete",
+		"ES": "Eliminar"
+	},
+	"SAVE_CHANGES": {
+		"EN": "Save changes",
+		"ES": "Guardar cambios"
+	},
+	"SAVE_SUCCESS": {
+		"EN": "Save success",
+		"ES": "Cambios realizados"
+	},
+	"OPT_EDITION": {
+		"EN": "Operation: Edition",
+		"ES": "Operacion: Edicion"
+	},
+	"OPT_NEW": {
+		"EN": "Operation: New",
+		"ES": "Operacion: Alta"
+	},
+	"PRESS_AGAIN_TO_SAVE": {
+		"EN": "Press again to save",
+		"ES": "Presiona de nuevo para guardar"
+	},
+	"PRESS_AGAIN_TO_DELETE": {
+		"EN": "Press again to delete",
+		"ES": "Presiona de nuevo para eliminar"
+	}
+}

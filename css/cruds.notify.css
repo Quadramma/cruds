@@ -1,0 +1,12 @@
+.notifyjs-bootstrap-base{
+	background: transparent !important;
+	border-radius: 0px!important;
+	border: 0px!important;
+	margin: 0px!important;
+	padding: 5px!important;
+}
+
+[data-notify-text], [data-notify-html]{
+	color: black!important;
+	font-size: 12px!important;
+}
